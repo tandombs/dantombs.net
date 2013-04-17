@@ -1,7 +1,7 @@
 class window.DT
 
   constructor: ->
-    @imagePath = '/images/'
+    @imagePath = 'images/'
     @remoteURLs = URLs
     @images = images
     
