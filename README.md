@@ -1,4 +1,4 @@
 dantombs.net
 ============
 
-www dt 
+Website for http://dantombs.net. It's meant to look like that.
