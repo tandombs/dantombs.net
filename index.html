@@ -16,15 +16,76 @@
   </head>
   <body><!--[if lt IE 7]>
     <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a> or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
-    <ul id="contact">
-      <li> <a href="https://twitter.com/dantombs" target="_blank">@dantombs</a></li>
-      <li><a href="https://www.youtube.com/playlist?list=PLB582256743009769" target="_blank">youtube</a></li>
-      <li><a href="https://vimeo.com/dantombs" target="_blank">vimeo</a></li>
+    <div id="prefill">
+      <div>
+        My work explores the obsolete, distorted, glitch(ed) and maligned across moving image, photography and design.
+
+        I perform live video projections (VJ performances) for festivals and club nights. I have performed at Semibreve Festival (PT), The Big Chill (UK), Nachdigital (DE), Bozar (BEL) Cargo, XOYO, Corsica Studios(UK), Melkweg (NL), Luxorlive (NL).
+
+        I'm currently working with Jon Hopkins, Walls, Factory Floor and Transept
+
+        I have also produced work for MTV, Output Recordings, Border Community, Kompakt Records, Aviva, ArtAngel, EAST international, University of East Anglia.
+
+        I am a visiting lecturer on Film and Moving Image production BA course at Norwich University College of the Arts and an Apple Certified Pro Trainer in Final Cut Pro.
+      </div>
+    </div>
+    <ul id="nav">
+      <li> <a href="https://twitter.com/dantombs">@dantombs</a></li>
+      <li><a href="https://youtube.com/dantombs">youtube</a></li>
+      <li><a href="https://vimeo.com/dantombs">vimeo</a></li>
       <li> <a href="mailto:dantombs@dantombs.net">email</a></li>
       <li> <a href="http://www.ebay.co.uk/sch/i.html?_odkw=dan+tombs&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0&_nkw=dan+tombs+-raider&_sacat=0" target="_blank">shop</a></li>
     </ul>
-    <script src="js/data.js"></script>
-    <script src="js/dt.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/dan.js"></script>
+    <script>
+      $(function(){
+        window.dan = new Dan([          
+            "http://www.160grams.com/exclusives/vision-and-sound-dan-tombs",
+            "http://www.inverted-audio.com/dan-tombs/",
+            "http://www.futuresequence.com/article/discover-dan-tombs/",
+            "http://www.youtube.com/watch?v=uX3n_eWN1Vc",
+            "http://norwichmusic.com/post/28900046565/awesome-dan-tombs-live-visuals-for-factory",
+            "https://www.rsn-tickets.com/event/inverted-audio-electronic-explorations-present-notown-luke-abbott-dam-mantle-wesley-matsell-dan-tombs/891/",
+            "http://www.nme.com/nme-video/youtube/id/IkDrteJqSLk",
+            "http://seamsmusic.com/post/46206147720/a-taste-of-dan-tombs-doing-visuals-at",
+            "http://thequietus.com/articles/11443-inverted-audio-luke-abbott-dan-tombs-mister-sushi",
+            "http://www.mirabcn.cat/artists/dan-tombs-uk/?lang=en",
+            "http://www.broadway.org.uk/pages/91",
+            "http://www.160grams.com/exclusives/vision-and-sound-dan-tombs",
+            "http://levfestival.com/13/en/program/jon-hopkins-dan-tombs/",
+            "http://www.residentadvisor.net/forum-read.aspx?id=205913",
+            "http://www.youtube.com/watch?v=OGBvuxDNVPM",
+            "http://vimeo.com/37237788",
+            "http://www.youtube.com/watch?v=S0aUveZfyEY",
+            "http://tate-collectives.tumblr.com/post/30169418792/factory-floor-this-evening-as-part-of",
+            "http://www.tumblr.com/tagged/dan+tombs",
+            "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=44783CE0-8E06-4B63-BAF2-5523A72B98BA&sessionlanguage=&SessionSecurity::linkName=",
+            "http://www.ica.org.uk/?lid=32140",
+            "http://www.laboralcentrodearte.org/es/recursos/personas/jon-hopkins-dan-tombs",
+            "http://noisey.vice.com/blog/tim-burgess-white-video-exclusive",
+            "http://thequietus.com/articles/09799-listen-sam-willis-winterval",
+            "https://www.google.co.uk/search?q=dan+tombs+visuals&tbm=isch&tbo=u&source=univ&sa=X&ei=YfduUbnjMKLy4QSe5YCADg&ved=0CGMQsAQ&biw=1017&bih=856"
+          ],[        
+            "brutality.gif",
+            "muscle_beach.gif",
+            "hyetal.gif",
+            "feedback_dt_01.gif",
+            "feedback_dt_02.gif",
+            "feedback_dt_03.gif",
+            "feedback_dt_04.gif",
+            "feedback_dt_05.gif",
+            "feedback_dt_06.gif",
+            "feedback_dt_07.gif",
+            "addidas_underground_ff.gif",
+            "cube_gif.gif",
+            "ica.gif"
+          ]
+        )
+      dan.init();
+      })
+  
+    </script>
     <script>
       var _gaq=[['_setAccount','UA-12705318-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
