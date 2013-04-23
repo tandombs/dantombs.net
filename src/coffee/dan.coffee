@@ -58,7 +58,6 @@ class window.Dan
     , delay
 
     setTimeout =>
-      $('body').addClass 'loading'
       $('#prefill').animate({
         "right": "#{30+Math.random()*50}%"
       }, @getDuration(3, 5), 'swing', =>
