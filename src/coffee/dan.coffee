@@ -48,6 +48,13 @@ class window.Dan
 
     setTimeout ->
       $('#prefill').addClass 'site'
+      $('#nav').jrumble({
+        x: 0,
+        y: 0,
+        rotation: 0.05,
+        speed: 10,
+        opacity: true
+      }).trigger('startRumble')
     , delay
 
     setTimeout =>
@@ -55,13 +62,6 @@ class window.Dan
       $('#prefill').animate({
         "right": "#{30+Math.random()*50}%"
       }, @getDuration(3, 5), 'swing', =>
-        $('#nav').jrumble({
-          x: 0,
-          y: 0,
-          rotation: 0.05,
-          speed: 10,
-          opacity: true
-        }).trigger('startRumble')
         @doIt()
         setTimeout (-> $('#prefill').remove()), @getDuration 0.5, 2
       )
