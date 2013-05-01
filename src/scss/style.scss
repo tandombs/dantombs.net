@@ -14,6 +14,10 @@ body {
 }
 
 .site {
+  -webkit-transition-property: right;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: right;
+  transition-timing-function: ease-out;
   color: #fff;
   font-size: 1em;
   text-shadow: 1px 1px 0px black, -1px -1px 0px black;
