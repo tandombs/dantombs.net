@@ -29,5 +29,5 @@ gulp.task('dev', ['sass', 'html'], () => {
         server: "./build"
     });
     gulp.watch("src/scss/*.scss", ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
 });
