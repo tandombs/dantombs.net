@@ -1,12 +1,12 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-const postcss      = require('gulp-postcss');
-const sourcemaps   = require('gulp-sourcemaps');
+const postcss = require('gulp-postcss');
+const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
+const ghPages = require('gulp-gh-pages');
 
-gulp.task('default', () => {
-});
+gulp.task('build', ['sass', 'html'], () => true);
 
 gulp.task('sass', () => gulp.src("src/scss/*.scss")
     .pipe(sourcemaps.init())
@@ -30,4 +30,9 @@ gulp.task('dev', ['sass', 'html'], () => {
     });
     gulp.watch("src/scss/*.scss", ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
+});
+
+gulp.task('deploy', ['build'], () => {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
 });
