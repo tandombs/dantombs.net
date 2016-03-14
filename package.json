@@ -1,0 +1,19 @@
+{
+  "name": "dantombs.net",
+  "version": "2.0.0",
+  "description": "Website for http://dantombs.net",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tandombs/dantombs.net.git"
+  },
+  "author": "sndrs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tandombs/dantombs.net/issues"
+  },
+  "homepage": "https://github.com/tandombs/dantombs.net#readme"
+}

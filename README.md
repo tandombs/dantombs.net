@@ -1,1 +1,1 @@
-See https://github.com/tandombs/dantombs.net/tree/gh-pages.
+Source for http://dantombs.net, by @sndrs.
