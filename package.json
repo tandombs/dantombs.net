@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tandombs/dantombs.net/issues"
   },
-  "homepage": "https://github.com/tandombs/dantombs.net#readme"
+  "homepage": "https://github.com/tandombs/dantombs.net#readme",
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  }
 }
