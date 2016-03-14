@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/tandombs/dantombs.net#readme",
   "devDependencies": {
-    "node-sass": "^3.4.2"
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
   }
 }
