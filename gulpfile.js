@@ -5,8 +5,16 @@ const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
 const ghPages = require('gulp-gh-pages');
+const del = require('del');
+const runSequence = require('run-sequence');
 
-gulp.task('build', ['sass', 'html', 'misc', 'images'], () => true);
+gulp.task('build', ['clean'], (cb) => {
+    runSequence(['sass', 'html', 'misc', 'images'], cb);
+});
+
+gulp.task('clean', () => del([
+    'build'
+]));
 
 gulp.task('sass', () => gulp.src("src/scss/*.scss")
     .pipe(sourcemaps.init())
