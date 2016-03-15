@@ -4,12 +4,14 @@ const browserSync = require('browser-sync').create();
 const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
+const inlinesource = require('gulp-inline-source');
 const ghPages = require('gulp-gh-pages');
 const del = require('del');
 const runSequence = require('run-sequence');
+const path = require('path');
 
 gulp.task('build', ['clean'], (cb) => {
-    runSequence(['sass', 'html', 'misc', 'images'], cb);
+    runSequence(['sass', 'misc', 'images'], 'html', cb);
 });
 
 gulp.task('clean', () => del([
@@ -28,6 +30,9 @@ gulp.task('sass', () => gulp.src("src/scss/*.scss")
 );
 
 gulp.task('html', () => gulp.src("src/**/*.html")
+    .pipe(inlinesource({
+        rootpath: path.resolve('build')
+    }))
     .pipe(gulp.dest("build"))
     .pipe(browserSync.stream())
 );

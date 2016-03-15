@@ -1,7 +1,9 @@
 Source for http://dantombs.net, by @sndrs.
 
-### dev
+### setup
 `npm i`
+
+### dev
 `gulp dev`
 
 ### deploy changes
