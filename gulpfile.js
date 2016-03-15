@@ -6,7 +6,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
 const ghPages = require('gulp-gh-pages');
 
-gulp.task('build', ['sass', 'html', 'misc'], () => true);
+gulp.task('build', ['sass', 'html', 'misc', 'images'], () => true);
 
 gulp.task('sass', () => gulp.src("src/scss/*.scss")
     .pipe(sourcemaps.init())
@@ -21,6 +21,11 @@ gulp.task('sass', () => gulp.src("src/scss/*.scss")
 
 gulp.task('html', () => gulp.src("src/**/*.html")
     .pipe(gulp.dest("build"))
+    .pipe(browserSync.stream())
+);
+
+gulp.task('images', () => gulp.src("src/images/*")
+    .pipe(gulp.dest("build/images"))
     .pipe(browserSync.stream())
 );
 
