@@ -1,1 +1,5 @@
-See https://github.com/tandombs/dantombs.net/tree/gh-pages.
+# dantombs.net
+
+## development
+
+- `yarn`
